@@ -29,11 +29,9 @@ public class QueryProcessor {
                     return String.valueOf(number1);
                 }
             }
-            if (query.contains("which of the following is the largest: ")) {
-                String[] numberList = query.split("which of the following is the largest: ");
-                System.out.println(numberList[0]);
-                System.out.println(numberList[1]);
-                String[] numbers = numberList[0].split(", ");
+            if (query.contains("which of the following numbers is the largest: ")) {
+                String[] numberList = query.split("which of the following numbers is the largest: ");
+                String[] numbers = numberList[1].split(", ");
                 int maximum = Integer.MIN_VALUE;
                 for (String number : numbers) {
                     int intValue = Integer.parseInt(number);
