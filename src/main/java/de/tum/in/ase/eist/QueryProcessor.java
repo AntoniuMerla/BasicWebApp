@@ -31,7 +31,7 @@ public class QueryProcessor {
             }
             if (query.contains("which of the following is the largest: ")) {
                 String[] numberList = query.split("which of the following is the largest: ");
-                String[] numbers = numberList[1].split(", ");
+                String[] numbers = numberList[0].split(", ");
                 int maximum = Integer.MIN_VALUE;
                 for (String number : numbers) {
                     int intValue = Integer.parseInt(number);
