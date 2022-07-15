@@ -35,8 +35,7 @@ public class QueryProcessor {
                 int maximum = Integer.MIN_VALUE;
                 for (String number : numbers) {
                     int intValue = Integer.parseInt(number);
-                    if (maximum < intValue) ;
-                    {
+                    if (maximum < intValue) {
                         maximum = intValue;
                     }
                 }
